@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'gothambold';
+    src: url('../fonts/gothambold-webfont.woff2') format('woff2'),
+         url('../fonts/gothambold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamlight';
+    src: url('../fonts/gothamlight-webfont.woff2') format('woff2'),
+         url('../fonts/gothamlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 18px;
+  line-height: 1;
+  font-family: 'gothamlight';
+}
+h2 {
+  font-family: 'gothambold';
+  text-transform: uppercase;
+}
+
+html {
+	background: #fafafa;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #4A2EF9;
+	overflow: hidden;
+  color: #626262;
+}
+a {
+	text-decoration: none;
+	color: #808080;
+	outline: none;
+}
+hr{
+  width: 100%;
+  height: 3px;
+  margin: 0px 0px 20px 0px;
+  border: 0;
+  background: #232952;
+  background: linear-gradient(90deg, #232952 0%, #6B4797 100%);
+}
+a:hover,
+a:focus {
+	color: #4A2EF9;
+	outline: none;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+.cuerpo{
+  padding: 1.5rem 2rem 1.5rem 2rem;
+}
+.info {
+  display: flex;
+	flex-direction: column;
+  z-index:1;
+	justify-content: center;
+	align-items: center;
+  padding: 0px;
+  max-width: 750px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  text-align: center;
+  margin: 1rem;
+}
+.title{
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+.title img {
+  width: 80%;
+}
+.text{
+  font-size: 22px;
+}
+.text span {
+  font-weight: bold;
+}
+.instagram, .correo{
+  display: flex;
+	flex-direction: row;
+  justify-content: center;
+	align-items: center;
+}
+.instagram svg, .correo svg {
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+}
+.correo {
+  padding: 15px;
+  /* border-bottom: 2px solid #808080; */
+  /* margin-bottom: 15px; */
+}
+
+.instagram {
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 40em) {
+
+  .text{
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .instagram div, .correo div  {
+    font-size: 16px;
+  }
+  .instagram svg, .correo svg {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+  }
+  .correo {
+    padding: 10px;
+    border-bottom: 1px solid #808080;
+    margin-bottom: 10px;
+  }
+}
