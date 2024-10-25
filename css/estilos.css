@@ -39,7 +39,8 @@ html {
 
 body {
 	min-height: 100vh;
-	background-color: #4A2EF9;
+	background: #232952;
+  background: linear-gradient(45deg, #232952 0%, #6B4797 100%);
 	overflow: hidden;
   color: #626262;
 }
@@ -118,13 +119,13 @@ a:focus {
   height: 22px;
 }
 .correo {
-  padding: 15px;
-  /* border-bottom: 2px solid #808080; */
-  /* margin-bottom: 15px; */
+  padding: 5px;
+  /* border-bottom: 1px solid #808080; */
+  margin: 0px;
 }
 
 .instagram {
-  margin-bottom: 10px;
+  margin: 5px 0px;
 }
 
 
@@ -144,9 +145,9 @@ a:focus {
     width: 18px;
     height: 18px;
   }
-  .correo {
+  /* .correo {
     padding: 10px;
     border-bottom: 1px solid #808080;
     margin-bottom: 10px;
-  }
+  } */
 }
